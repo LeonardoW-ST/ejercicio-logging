@@ -12,5 +12,5 @@ public interface UserService {
 
     Optional<User> createUser(String id, User user);
 
-    Optional<User> addBet(int userId, Bet bet);
+    Optional<User> addBet(String userId, Bet bet);
 }

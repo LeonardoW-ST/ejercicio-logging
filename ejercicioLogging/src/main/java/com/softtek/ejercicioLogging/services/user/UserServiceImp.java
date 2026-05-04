@@ -40,7 +40,7 @@ public class UserServiceImp implements UserService {
     }
 
     @Override
-    public Optional<User> getUserById(int id) {
+    public Optional<User> getUserById(String id) {
         log.info("Consultando datos de un usuario");
         log.debug("Buscando usuario con id={}", id);
         return userRepository.findById(id);

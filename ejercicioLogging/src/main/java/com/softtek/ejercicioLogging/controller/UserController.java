@@ -1,7 +1,8 @@
 package com.softtek.ejercicioLogging.controller;
 
-import com.softtek.ejercicioLogging.model.User;
-import com.softtek.ejercicioLogging.services.UserService;
+
+import com.softtek.ejercicioLogging.daos.model.User;
+import com.softtek.ejercicioLogging.services.user.UserService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
