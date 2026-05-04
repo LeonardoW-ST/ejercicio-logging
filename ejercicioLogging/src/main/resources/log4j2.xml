@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" monitorInterval="30">
+    <Properties>
+        <Property name="OUTPUT_PATTERN">%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%t] %c{3.} - %msg%n</Property>
+    </Properties>
+
+    <Appenders>
+        <Console name="CONSOLE" target="SYSTEM_OUT">
+            <PatternLayout pattern="${OUTPUT_PATTERN}"/>
+        </Console>
+        <File name="APPLICATION_FILE" fileName="out/application.log" append="true">
+            <PatternLayout pattern="${OUTPUT_PATTERN}"/>
+        </File>
+        <File name="AUDIT_FILE" fileName="out/audit.log" append="true">
+            <PatternLayout pattern="${OUTPUT_PATTERN}"/>
+        </File>
+    </Appenders>
+
+    <Loggers>
+        <Logger name="com.softtek.ejercicioLogging" level="DEBUG" additivity="false">
+            <AppenderRef ref="CONSOLE"/>
+            <AppenderRef ref="APPLICATION_FILE"/>
+        </Logger>
+
+        <Logger name="AUDIT" level="INFO" additivity="false">
+            <AppenderRef ref="AUDIT_FILE"/>
+        </Logger>
+
+        <Root level="INFO">
+            <AppenderRef ref="CONSOLE"/>
+            <AppenderRef ref="APPLICATION_FILE"/>
+        </Root>
+    </Loggers>
+</Configuration>
