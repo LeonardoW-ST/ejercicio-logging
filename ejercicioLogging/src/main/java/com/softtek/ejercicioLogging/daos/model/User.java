@@ -1,6 +1,5 @@
-package com.softtek.ejercicioLogging.model;
+package com.softtek.ejercicioLogging.daos.model;
 
-import com.softtek.ejercicioLogging.daos.model.Bet;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

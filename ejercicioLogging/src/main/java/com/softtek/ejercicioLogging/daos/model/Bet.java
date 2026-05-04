@@ -1,6 +1,5 @@
 package com.softtek.ejercicioLogging.daos.model;
 
-import com.softtek.ejercicioLogging.model.User;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

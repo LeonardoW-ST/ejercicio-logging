@@ -1,7 +1,7 @@
-package com.softtek.ejercicioLogging.services;
+package com.softtek.ejercicioLogging.services.user;
 
 import com.softtek.ejercicioLogging.daos.model.Bet;
-import com.softtek.ejercicioLogging.model.User;
+import com.softtek.ejercicioLogging.daos.model.User;
 
 import java.util.List;
 import java.util.Optional;
