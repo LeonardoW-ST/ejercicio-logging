@@ -1,0 +1,566 @@
+2026-05-04 15:32:12.779 INFO  [main] com.sof.eje.EjercicioLoggingApplication - Starting EjercicioLoggingApplication using Java 17.0.18 with PID 14924 (C:\Users\jaime.castillo\Documents\ejercicio-logging\ejercicioLogging\target\classes started by jaime.castillo in C:\Users\jaime.castillo\Documents\ejercicio-logging)
+2026-05-04 15:32:12.792 DEBUG [main] com.sof.eje.EjercicioLoggingApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-04 15:32:12.794 INFO  [main] com.sof.eje.EjercicioLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-04 15:32:13.515 INFO  [main] org.spr.dat.rep.con.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-04 15:32:13.595 INFO  [main] org.spr.dat.rep.con.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 63 ms. Found 2 JPA repository interfaces.
+2026-05-04 15:32:14.169 INFO  [main] org.spr.boo.tom.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-05-04 15:32:14.185 INFO  [main] org.apa.coy.htt.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-04 15:32:14.187 INFO  [main] org.apa.cat.cor.StandardService - Starting service [Tomcat]
+2026-05-04 15:32:14.187 INFO  [main] org.apa.cat.cor.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-04 15:32:14.245 INFO  [main] org.spr.boo.web.con.ser.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1406 ms
+2026-05-04 15:32:14.435 INFO  [main] org.hib.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-04 15:32:14.532 INFO  [main] org.hib.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-04 15:32:15.028 INFO  [main] org.spr.orm.jpa.per.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-04 15:32:15.075 INFO  [main] com.zax.hik.HikariDataSource - HikariPool-1 - Starting...
+2026-05-04 15:32:15.239 INFO  [main] com.zax.hik.poo.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:primitiva user=SA
+2026-05-04 15:32:15.241 INFO  [main] com.zax.hik.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-04 15:32:15.278 WARN  [main] org.hib.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-04 15:32:15.304 INFO  [main] org.hib.orm.con.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:primitiva]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: PRIMITIVA/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-04 15:32:16.556 INFO  [main] org.hib.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-04 15:32:16.585 WARN  [main] org.hib.too.sch.int.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "
+    drop table if exists user cascade " via JDBC [Error de Sintaxis en sentencia SQL "\000d\000a    drop table if exists [*]user cascade "; se esperaba "identifier"
+Syntax error in SQL statement "\000d\000a    drop table if exists [*]user cascade "; expected "identifier";]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    drop table if exists user cascade " via JDBC [Error de Sintaxis en sentencia SQL "\000d\000a    drop table if exists [*]user cascade "; se esperaba "identifier"
+Syntax error in SQL statement "\000d\000a    drop table if exists [*]user cascade "; expected "identifier";]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:81)
+	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:218)
+	at org.hibernate.tool.schema.internal.Helper.applySqlStrings(Helper.java:204)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropTables(SchemaDropperImpl.java:376)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropConstraintsTablesSequences(SchemaDropperImpl.java:248)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:210)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:182)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:152)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:227)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$1(SchemaManagementToolCoordinator.java:101)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:100)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:35)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:33)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:323)
+	at org.hibernate.internal.SessionFactoryRegistry.instantiateSessionFactory(SessionFactoryRegistry.java:64)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:437)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1456)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:93)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:443)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:436)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:411)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:419)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1864)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1813)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:977)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at com.softtek.ejercicioLogging.EjercicioLoggingApplication.main(EjercicioLoggingApplication.java:10)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "\000d\000a    drop table if exists [*]user cascade "; se esperaba "identifier"
+Syntax error in SQL statement "\000d\000a    drop table if exists [*]user cascade "; expected "identifier"; SQL statement:
+
+    drop table if exists user cascade  [42001-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.getSyntaxError(DbException.java:261)
+	at org.h2.command.Parser.readIdentifier(Parser.java:5568)
+	at org.h2.command.Parser.readIdentifierWithSchema(Parser.java:5503)
+	at org.h2.command.Parser.readIdentifierWithSchema(Parser.java:5532)
+	at org.h2.command.Parser.parseDrop(Parser.java:2097)
+	at org.h2.command.Parser.parsePrepared(Parser.java:661)
+	at org.h2.command.Parser.parse(Parser.java:584)
+	at org.h2.command.Parser.parse(Parser.java:559)
+	at org.h2.command.Parser.prepareCommand(Parser.java:487)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:647)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:563)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1160)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:245)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:76)
+	... 40 more
+2026-05-04 15:32:16.607 WARN  [main] org.hib.too.sch.int.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "
+    create table user (
+        id varchar(255) not null,
+        nombre varchar(255),
+        primary key (id)
+    )" via JDBC [Error de Sintaxis en sentencia SQL "\000d\000a    create table [*]user (\000d\000a        id varchar(255) not null,\000d\000a        nombre varchar(255),\000d\000a        primary key (id)\000d\000a    )"; se esperaba "identifier"
+Syntax error in SQL statement "\000d\000a    create table [*]user (\000d\000a        id varchar(255) not null,\000d\000a        nombre varchar(255),\000d\000a        primary key (id)\000d\000a    )"; expected "identifier";]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    create table user (
+        id varchar(255) not null,
+        nombre varchar(255),
+        primary key (id)
+    )" via JDBC [Error de Sintaxis en sentencia SQL "\000d\000a    create table [*]user (\000d\000a        id varchar(255) not null,\000d\000a        nombre varchar(255),\000d\000a        primary key (id)\000d\000a    )"; se esperaba "identifier"
+Syntax error in SQL statement "\000d\000a    create table [*]user (\000d\000a        id varchar(255) not null,\000d\000a        nombre varchar(255),\000d\000a        primary key (id)\000d\000a    )"; expected "identifier";]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:81)
+	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:218)
+	at org.hibernate.tool.schema.internal.Helper.applySqlStrings(Helper.java:204)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createTables(SchemaCreatorImpl.java:404)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createSequencesTablesConstraints(SchemaCreatorImpl.java:320)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:215)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:151)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:121)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:97)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:239)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$1(SchemaManagementToolCoordinator.java:101)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:100)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:35)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:33)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:323)
+	at org.hibernate.internal.SessionFactoryRegistry.instantiateSessionFactory(SessionFactoryRegistry.java:64)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:437)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1456)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:93)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:443)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:436)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:411)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:419)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1864)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1813)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:977)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at com.softtek.ejercicioLogging.EjercicioLoggingApplication.main(EjercicioLoggingApplication.java:10)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "\000d\000a    create table [*]user (\000d\000a        id varchar(255) not null,\000d\000a        nombre varchar(255),\000d\000a        primary key (id)\000d\000a    )"; se esperaba "identifier"
+Syntax error in SQL statement "\000d\000a    create table [*]user (\000d\000a        id varchar(255) not null,\000d\000a        nombre varchar(255),\000d\000a        primary key (id)\000d\000a    )"; expected "identifier"; SQL statement:
+
+    create table user (
+        id varchar(255) not null,
+        nombre varchar(255),
+        primary key (id)
+    ) [42001-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.getSyntaxError(DbException.java:261)
+	at org.h2.command.Parser.readIdentifier(Parser.java:5568)
+	at org.h2.command.Parser.readIdentifierWithSchema(Parser.java:5503)
+	at org.h2.command.Parser.readIdentifierWithSchema(Parser.java:5532)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8908)
+	at org.h2.command.Parser.parseCreate(Parser.java:6483)
+	at org.h2.command.Parser.parsePrepared(Parser.java:648)
+	at org.h2.command.Parser.parse(Parser.java:584)
+	at org.h2.command.Parser.parse(Parser.java:559)
+	at org.h2.command.Parser.prepareCommand(Parser.java:487)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:647)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:563)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1160)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:245)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:76)
+	... 40 more
+2026-05-04 15:32:16.624 WARN  [main] org.hib.too.sch.int.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table if exists bets 
+       add constraint FK4byotp135g1fidrdu392tsmks 
+       foreign key (user_id) 
+       references user" via JDBC [Error de Sintaxis en sentencia SQL "\000d\000a    alter table if exists bets \000d\000a       add constraint FK4byotp135g1fidrdu392tsmks \000d\000a       foreign key (user_id) \000d\000a       references [*]user"; se esperaba "identifier"
+Syntax error in SQL statement "\000d\000a    alter table if exists bets \000d\000a       add constraint FK4byotp135g1fidrdu392tsmks \000d\000a       foreign key (user_id) \000d\000a       references [*]user"; expected "identifier";]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table if exists bets 
+       add constraint FK4byotp135g1fidrdu392tsmks 
+       foreign key (user_id) 
+       references user" via JDBC [Error de Sintaxis en sentencia SQL "\000d\000a    alter table if exists bets \000d\000a       add constraint FK4byotp135g1fidrdu392tsmks \000d\000a       foreign key (user_id) \000d\000a       references [*]user"; se esperaba "identifier"
+Syntax error in SQL statement "\000d\000a    alter table if exists bets \000d\000a       add constraint FK4byotp135g1fidrdu392tsmks \000d\000a       foreign key (user_id) \000d\000a       references [*]user"; expected "identifier";]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:81)
+	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:218)
+	at org.hibernate.tool.schema.internal.Helper.applySqlStrings(Helper.java:204)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createForeignKeys(SchemaCreatorImpl.java:281)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:227)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:151)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:121)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:97)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:239)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$1(SchemaManagementToolCoordinator.java:101)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:100)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:35)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:33)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:323)
+	at org.hibernate.internal.SessionFactoryRegistry.instantiateSessionFactory(SessionFactoryRegistry.java:64)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:437)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1456)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:93)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:443)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:436)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:411)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:419)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1864)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1813)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:977)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at com.softtek.ejercicioLogging.EjercicioLoggingApplication.main(EjercicioLoggingApplication.java:10)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "\000d\000a    alter table if exists bets \000d\000a       add constraint FK4byotp135g1fidrdu392tsmks \000d\000a       foreign key (user_id) \000d\000a       references [*]user"; se esperaba "identifier"
+Syntax error in SQL statement "\000d\000a    alter table if exists bets \000d\000a       add constraint FK4byotp135g1fidrdu392tsmks \000d\000a       foreign key (user_id) \000d\000a       references [*]user"; expected "identifier"; SQL statement:
+
+    alter table if exists bets 
+       add constraint FK4byotp135g1fidrdu392tsmks 
+       foreign key (user_id) 
+       references user [42001-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.getSyntaxError(DbException.java:261)
+	at org.h2.command.Parser.readIdentifier(Parser.java:5568)
+	at org.h2.command.Parser.readIdentifierWithSchema(Parser.java:5503)
+	at org.h2.command.Parser.parseReferences(Parser.java:8833)
+	at org.h2.command.Parser.parseTableConstraintIf(Parser.java:8767)
+	at org.h2.command.Parser.parseAlterTable(Parser.java:8130)
+	at org.h2.command.Parser.parseAlter(Parser.java:7163)
+	at org.h2.command.Parser.parsePrepared(Parser.java:632)
+	at org.h2.command.Parser.parse(Parser.java:584)
+	at org.h2.command.Parser.parse(Parser.java:559)
+	at org.h2.command.Parser.prepareCommand(Parser.java:487)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:647)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:563)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1160)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:245)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:76)
+	... 39 more
+2026-05-04 15:32:16.628 INFO  [main] org.spr.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-04 15:32:16.653 WARN  [main] org.spr.boo.web.ser.ser.con.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [C:\Users\jaime.castillo\Documents\ejercicio-logging\ejercicioLogging\target\classes\com\softtek\ejercicioLogging\controller\UserController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.softtek.ejercicioLogging.services.UserService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-05-04 15:32:16.654 INFO  [main] org.spr.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-04 15:32:16.657 ERROR [main] org.hib.orm.core - HHH000478: Unsuccessful: 
+    drop table if exists user cascade 
+2026-05-04 15:32:16.661 INFO  [main] com.zax.hik.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-04 15:32:16.663 INFO  [main] com.zax.hik.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-04 15:32:16.666 INFO  [main] org.apa.cat.cor.StandardService - Stopping service [Tomcat]
+2026-05-04 15:32:16.679 INFO  [main] org.spr.boo.aut.log.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-05-04 15:32:16.700 ERROR [main] org.spr.boo.dia.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.softtek.ejercicioLogging.controller.UserController required a bean of type 'com.softtek.ejercicioLogging.services.UserService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.softtek.ejercicioLogging.services.UserService' in your configuration.
+
+2026-05-04 15:34:34.561 INFO  [main] com.sof.eje.EjercicioLoggingApplication - Starting EjercicioLoggingApplication using Java 17.0.18 with PID 30308 (C:\Users\jaime.castillo\Documents\ejercicio-logging\ejercicioLogging\target\classes started by jaime.castillo in C:\Users\jaime.castillo\Documents\ejercicio-logging)
+2026-05-04 15:34:34.568 DEBUG [main] com.sof.eje.EjercicioLoggingApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-04 15:34:34.569 INFO  [main] com.sof.eje.EjercicioLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-04 15:34:35.171 INFO  [main] org.spr.dat.rep.con.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-04 15:34:35.262 INFO  [main] org.spr.dat.rep.con.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 73 ms. Found 2 JPA repository interfaces.
+2026-05-04 15:34:35.780 INFO  [main] org.spr.boo.tom.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-05-04 15:34:35.791 INFO  [main] org.apa.coy.htt.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-04 15:34:35.793 INFO  [main] org.apa.cat.cor.StandardService - Starting service [Tomcat]
+2026-05-04 15:34:35.793 INFO  [main] org.apa.cat.cor.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-04 15:34:35.842 INFO  [main] org.spr.boo.web.con.ser.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1237 ms
+2026-05-04 15:34:35.981 INFO  [main] org.hib.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-04 15:34:36.033 INFO  [main] org.hib.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-04 15:34:36.405 INFO  [main] org.spr.orm.jpa.per.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-04 15:34:36.432 INFO  [main] com.zax.hik.HikariDataSource - HikariPool-1 - Starting...
+2026-05-04 15:34:36.565 INFO  [main] com.zax.hik.poo.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:primitiva user=SA
+2026-05-04 15:34:36.567 INFO  [main] com.zax.hik.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-04 15:34:36.584 WARN  [main] org.hib.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-04 15:34:36.604 INFO  [main] org.hib.orm.con.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:primitiva]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: PRIMITIVA/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-04 15:34:36.767 ERROR [main] org.spr.orm.jpa.LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: Collection 'com.softtek.ejercicioLogging.model.User.bets' is 'mappedBy' a property named 'users' which does not exist in the target entity 'com.softtek.ejercicioLogging.daos.model.Bet'
+2026-05-04 15:34:36.768 WARN  [main] org.spr.boo.web.ser.ser.con.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/hibernate/autoconfigure/HibernateJpaConfiguration.class]: Collection 'com.softtek.ejercicioLogging.model.User.bets' is 'mappedBy' a property named 'users' which does not exist in the target entity 'com.softtek.ejercicioLogging.daos.model.Bet'
+2026-05-04 15:34:36.768 INFO  [main] com.zax.hik.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-04 15:34:36.780 INFO  [main] com.zax.hik.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-04 15:34:36.782 INFO  [main] org.apa.cat.cor.StandardService - Stopping service [Tomcat]
+2026-05-04 15:34:36.788 INFO  [main] org.spr.boo.aut.log.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-05-04 15:34:36.799 ERROR [main] org.spr.boo.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/hibernate/autoconfigure/HibernateJpaConfiguration.class]: Collection 'com.softtek.ejercicioLogging.model.User.bets' is 'mappedBy' a property named 'users' which does not exist in the target entity 'com.softtek.ejercicioLogging.daos.model.Bet'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1817)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:977)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at com.softtek.ejercicioLogging.EjercicioLoggingApplication.main(EjercicioLoggingApplication.java:10)
+Caused by: org.hibernate.AnnotationException: Collection 'com.softtek.ejercicioLogging.model.User.bets' is 'mappedBy' a property named 'users' which does not exist in the target entity 'com.softtek.ejercicioLogging.daos.model.Bet'
+	at org.hibernate.boot.model.internal.CollectionBinder.getMappedByProperty(CollectionBinder.java:1523)
+	at org.hibernate.boot.model.internal.CollectionBinder.isReversePropertyInJoin(CollectionBinder.java:1506)
+	at org.hibernate.boot.model.internal.CollectionBinder.noAssociationTable(CollectionBinder.java:1531)
+	at org.hibernate.boot.model.internal.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:1489)
+	at org.hibernate.boot.model.internal.CollectionBinder$1.secondPass(CollectionBinder.java:1480)
+	at org.hibernate.boot.model.internal.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:39)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1771)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1737)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.coordinateProcessors(MetadataBuildingProcess.java:357)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:201)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1392)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.populateSessionFactoryBuilder(EntityManagerFactoryBuilderImpl.java:1472)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1454)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:93)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:443)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:436)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:411)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:419)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1864)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1813)
+	... 15 more
+2026-05-04 15:35:56.482 INFO  [main] com.sof.eje.EjercicioLoggingApplication - Starting EjercicioLoggingApplication using Java 17.0.18 with PID 30968 (C:\Users\jaime.castillo\Documents\ejercicio-logging\ejercicioLogging\target\classes started by jaime.castillo in C:\Users\jaime.castillo\Documents\ejercicio-logging)
+2026-05-04 15:35:56.497 DEBUG [main] com.sof.eje.EjercicioLoggingApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-04 15:35:56.499 INFO  [main] com.sof.eje.EjercicioLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-04 15:35:57.360 INFO  [main] org.spr.dat.rep.con.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-04 15:35:57.456 INFO  [main] org.spr.dat.rep.con.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 74 ms. Found 2 JPA repository interfaces.
+2026-05-04 15:35:58.119 INFO  [main] org.spr.boo.tom.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-05-04 15:35:58.136 INFO  [main] org.apa.coy.htt.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-04 15:35:58.139 INFO  [main] org.apa.cat.cor.StandardService - Starting service [Tomcat]
+2026-05-04 15:35:58.139 INFO  [main] org.apa.cat.cor.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-04 15:35:58.229 INFO  [main] org.spr.boo.web.con.ser.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1665 ms
+2026-05-04 15:35:58.536 INFO  [main] org.hib.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-04 15:35:58.653 INFO  [main] org.hib.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-04 15:35:59.431 INFO  [main] org.spr.orm.jpa.per.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-04 15:35:59.485 INFO  [main] com.zax.hik.HikariDataSource - HikariPool-1 - Starting...
+2026-05-04 15:35:59.894 INFO  [main] com.zax.hik.poo.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:primitiva user=SA
+2026-05-04 15:35:59.899 INFO  [main] com.zax.hik.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-04 15:35:59.968 WARN  [main] org.hib.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-04 15:36:00.029 INFO  [main] org.hib.orm.con.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:primitiva]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: PRIMITIVA/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-04 15:36:00.341 ERROR [main] org.spr.orm.jpa.LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: Collection 'com.softtek.ejercicioLogging.model.User.bets' is 'mappedBy' a property named 'users' which does not exist in the target entity 'com.softtek.ejercicioLogging.daos.model.Bet'
+2026-05-04 15:36:00.342 WARN  [main] org.spr.boo.web.ser.ser.con.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/hibernate/autoconfigure/HibernateJpaConfiguration.class]: Collection 'com.softtek.ejercicioLogging.model.User.bets' is 'mappedBy' a property named 'users' which does not exist in the target entity 'com.softtek.ejercicioLogging.daos.model.Bet'
+2026-05-04 15:36:00.342 INFO  [main] com.zax.hik.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-04 15:36:00.372 INFO  [main] com.zax.hik.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-04 15:36:00.376 INFO  [main] org.apa.cat.cor.StandardService - Stopping service [Tomcat]
+2026-05-04 15:36:00.385 INFO  [main] org.spr.boo.aut.log.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-05-04 15:36:00.402 ERROR [main] org.spr.boo.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/hibernate/autoconfigure/HibernateJpaConfiguration.class]: Collection 'com.softtek.ejercicioLogging.model.User.bets' is 'mappedBy' a property named 'users' which does not exist in the target entity 'com.softtek.ejercicioLogging.daos.model.Bet'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1817)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:977)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at com.softtek.ejercicioLogging.EjercicioLoggingApplication.main(EjercicioLoggingApplication.java:10)
+Caused by: org.hibernate.AnnotationException: Collection 'com.softtek.ejercicioLogging.model.User.bets' is 'mappedBy' a property named 'users' which does not exist in the target entity 'com.softtek.ejercicioLogging.daos.model.Bet'
+	at org.hibernate.boot.model.internal.CollectionBinder.getMappedByProperty(CollectionBinder.java:1523)
+	at org.hibernate.boot.model.internal.CollectionBinder.isReversePropertyInJoin(CollectionBinder.java:1506)
+	at org.hibernate.boot.model.internal.CollectionBinder.noAssociationTable(CollectionBinder.java:1531)
+	at org.hibernate.boot.model.internal.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:1489)
+	at org.hibernate.boot.model.internal.CollectionBinder$1.secondPass(CollectionBinder.java:1480)
+	at org.hibernate.boot.model.internal.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:39)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1771)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1737)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.coordinateProcessors(MetadataBuildingProcess.java:357)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:201)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1392)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.populateSessionFactoryBuilder(EntityManagerFactoryBuilderImpl.java:1472)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1454)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:93)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:443)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:436)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:411)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:419)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1864)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1813)
+	... 15 more
+2026-05-04 15:36:44.615 INFO  [main] com.sof.eje.EjercicioLoggingApplication - Starting EjercicioLoggingApplication using Java 17.0.18 with PID 26116 (C:\Users\jaime.castillo\Documents\ejercicio-logging\ejercicioLogging\target\classes started by jaime.castillo in C:\Users\jaime.castillo\Documents\ejercicio-logging)
+2026-05-04 15:36:44.623 DEBUG [main] com.sof.eje.EjercicioLoggingApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-04 15:36:44.625 INFO  [main] com.sof.eje.EjercicioLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-04 15:36:45.197 INFO  [main] org.spr.dat.rep.con.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-04 15:36:45.266 INFO  [main] org.spr.dat.rep.con.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 53 ms. Found 2 JPA repository interfaces.
+2026-05-04 15:36:45.765 INFO  [main] org.spr.boo.tom.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-05-04 15:36:45.778 INFO  [main] org.apa.coy.htt.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-04 15:36:45.780 INFO  [main] org.apa.cat.cor.StandardService - Starting service [Tomcat]
+2026-05-04 15:36:45.780 INFO  [main] org.apa.cat.cor.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-04 15:36:45.833 INFO  [main] org.spr.boo.web.con.ser.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1166 ms
+2026-05-04 15:36:46.007 INFO  [main] org.hib.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-04 15:36:46.085 INFO  [main] org.hib.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-04 15:36:46.579 INFO  [main] org.spr.orm.jpa.per.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-04 15:36:46.618 INFO  [main] com.zax.hik.HikariDataSource - HikariPool-1 - Starting...
+2026-05-04 15:36:46.826 INFO  [main] com.zax.hik.poo.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:primitiva user=SA
+2026-05-04 15:36:46.827 INFO  [main] com.zax.hik.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-04 15:36:46.861 WARN  [main] org.hib.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-04 15:36:46.884 INFO  [main] org.hib.orm.con.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:primitiva]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: PRIMITIVA/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-04 15:36:47.815 INFO  [main] org.hib.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-04 15:36:47.872 INFO  [main] org.spr.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-04 15:36:47.950 INFO  [main] org.spr.dat.jpa.rep.que.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-04 15:36:48.084 WARN  [main] org.spr.boo.jpa.aut.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-04 15:36:48.342 INFO  [main] org.spr.boo.h2c.aut.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:primitiva'
+2026-05-04 15:36:48.388 INFO  [main] org.apa.coy.htt.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-05-04 15:36:48.413 INFO  [main] org.spr.boo.tom.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-05-04 15:36:48.418 INFO  [main] com.sof.eje.EjercicioLoggingApplication - Started EjercicioLoggingApplication in 4.178 seconds (process running for 5.002)
+2026-05-04 15:37:26.824 INFO  [http-nio-8080-exec-1] org.apa.cat.cor.Con.[To.[lo.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-04 15:37:26.824 INFO  [http-nio-8080-exec-1] org.spr.web.ser.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-04 15:37:26.824 INFO  [http-nio-8080-exec-1] org.spr.web.ser.DispatcherServlet - Completed initialization in 0 ms
+2026-05-04 15:37:26.874 INFO  [http-nio-8080-exec-1] com.sof.eje.ser.UserServiceImpl - Intentando recuperar todos los usuarios
+2026-05-04 15:37:27.056 INFO  [http-nio-8080-exec-1] com.sof.eje.ser.UserServiceImpl - Usuarios recuperados correctamente, total: 3
+2026-05-04 15:37:27.149 WARN  [http-nio-8080-exec-1] org.spr.web.ser.mvc.sup.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (501) exceeds the maximum allowed (500, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2026-05-04 15:37:27.150 WARN  [http-nio-8080-exec-1] org.spr.web.ser.mvc.sup.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (501) exceeds the maximum allowed (500, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2026-05-04 15:40:59.130 INFO  [SpringApplicationShutdownHook] org.spr.boo.tom.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-04 15:40:59.591 INFO  [tomcat-shutdown] org.spr.boo.tom.GracefulShutdown - Graceful shutdown complete
+2026-05-04 15:40:59.594 INFO  [SpringApplicationShutdownHook] org.spr.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-04 15:40:59.602 INFO  [SpringApplicationShutdownHook] com.zax.hik.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-04 15:40:59.604 INFO  [SpringApplicationShutdownHook] com.zax.hik.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-04 15:41:05.754 INFO  [main] com.sof.eje.EjercicioLoggingApplication - Starting EjercicioLoggingApplication using Java 17.0.18 with PID 29244 (C:\Users\jaime.castillo\Documents\ejercicio-logging\ejercicioLogging\target\classes started by jaime.castillo in C:\Users\jaime.castillo\Documents\ejercicio-logging)
+2026-05-04 15:41:05.760 DEBUG [main] com.sof.eje.EjercicioLoggingApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-04 15:41:05.761 INFO  [main] com.sof.eje.EjercicioLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-04 15:41:06.314 INFO  [main] org.spr.dat.rep.con.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-04 15:41:06.365 INFO  [main] org.spr.dat.rep.con.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 44 ms. Found 2 JPA repository interfaces.
+2026-05-04 15:41:06.831 INFO  [main] org.spr.boo.tom.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-05-04 15:41:06.845 INFO  [main] org.apa.coy.htt.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-04 15:41:06.846 INFO  [main] org.apa.cat.cor.StandardService - Starting service [Tomcat]
+2026-05-04 15:41:06.847 INFO  [main] org.apa.cat.cor.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-04 15:41:06.900 INFO  [main] org.spr.boo.web.con.ser.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1100 ms
+2026-05-04 15:41:07.054 INFO  [main] org.hib.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-04 15:41:07.130 INFO  [main] org.hib.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-04 15:41:07.590 INFO  [main] org.spr.orm.jpa.per.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-04 15:41:07.631 INFO  [main] com.zax.hik.HikariDataSource - HikariPool-1 - Starting...
+2026-05-04 15:41:07.842 INFO  [main] com.zax.hik.poo.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:primitiva user=SA
+2026-05-04 15:41:07.844 INFO  [main] com.zax.hik.HikariDataSource - HikariPool-1 - Start completed.
+2026-05-04 15:41:07.875 WARN  [main] org.hib.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-04 15:41:07.899 INFO  [main] org.hib.orm.con.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:primitiva]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: PRIMITIVA/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-04 15:41:08.927 INFO  [main] org.hib.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-04 15:41:09.012 INFO  [main] org.spr.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-04 15:41:09.102 INFO  [main] org.spr.dat.jpa.rep.que.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-04 15:41:09.218 WARN  [main] org.spr.boo.jpa.aut.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-04 15:41:09.460 INFO  [main] org.spr.boo.h2c.aut.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:primitiva'
+2026-05-04 15:41:09.504 INFO  [main] org.apa.coy.htt.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-05-04 15:41:09.534 INFO  [main] org.spr.boo.tom.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-05-04 15:41:09.540 INFO  [main] com.sof.eje.EjercicioLoggingApplication - Started EjercicioLoggingApplication in 4.131 seconds (process running for 4.872)
+2026-05-04 15:41:12.934 INFO  [http-nio-8080-exec-1] org.apa.cat.cor.Con.[To.[lo.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-04 15:41:12.934 INFO  [http-nio-8080-exec-1] org.spr.web.ser.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-05-04 15:41:12.936 INFO  [http-nio-8080-exec-1] org.spr.web.ser.DispatcherServlet - Completed initialization in 2 ms
+2026-05-04 15:41:12.998 INFO  [http-nio-8080-exec-1] com.sof.eje.ser.UserServiceImpl - Intentando recuperar todos los usuarios
+2026-05-04 15:41:13.198 INFO  [http-nio-8080-exec-1] com.sof.eje.ser.UserServiceImpl - Usuarios recuperados correctamente, total: 3
+2026-05-04 15:41:34.757 INFO  [SpringApplicationShutdownHook] org.spr.boo.tom.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-04 15:41:35.232 INFO  [tomcat-shutdown] org.spr.boo.tom.GracefulShutdown - Graceful shutdown complete
+2026-05-04 15:41:35.235 INFO  [SpringApplicationShutdownHook] org.spr.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-04 15:41:35.238 INFO  [SpringApplicationShutdownHook] com.zax.hik.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-05-04 15:41:35.240 INFO  [SpringApplicationShutdownHook] com.zax.hik.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-04 16:28:40.949 INFO  [main] c.s.e.EjercicioLoggingApplication - Starting EjercicioLoggingApplication using Java 17.0.18 with PID 17428 (C:\Users\jaime.castillo\Documents\ejercicio-logging\ejercicioLogging\target\classes started by jaime.castillo in C:\Users\jaime.castillo\Documents\ejercicio-logging)
+2026-05-04 16:28:40.960 DEBUG [main] c.s.e.EjercicioLoggingApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-04 16:28:40.961 INFO  [main] c.s.e.EjercicioLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-04 16:29:24.103 INFO  [main] c.s.e.EjercicioLoggingApplication - Starting EjercicioLoggingApplication using Java 17.0.18 with PID 11840 (C:\Users\jaime.castillo\Documents\ejercicio-logging\ejercicioLogging\target\classes started by jaime.castillo in C:\Users\jaime.castillo\Documents\ejercicio-logging)
+2026-05-04 16:29:24.111 DEBUG [main] c.s.e.EjercicioLoggingApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-04 16:29:24.112 INFO  [main] c.s.e.EjercicioLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-04 16:30:24.942 INFO  [main] c.s.e.EjercicioLoggingApplication - Starting EjercicioLoggingApplication using Java 17.0.18 with PID 31168 (C:\Users\jaime.castillo\Documents\ejercicio-logging\ejercicioLogging\target\classes started by jaime.castillo in C:\Users\jaime.castillo\Documents\ejercicio-logging)
+2026-05-04 16:30:24.951 DEBUG [main] c.s.e.EjercicioLoggingApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-04 16:30:24.952 INFO  [main] c.s.e.EjercicioLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-04 16:35:00.020 INFO  [main] c.s.e.EjercicioLoggingApplication - Starting EjercicioLoggingApplication using Java 17.0.18 with PID 33612 (C:\Users\jaime.castillo\Documents\ejercicio-logging\ejercicioLogging\target\classes started by jaime.castillo in C:\Users\jaime.castillo\Documents\ejercicio-logging)
+2026-05-04 16:35:00.031 DEBUG [main] c.s.e.EjercicioLoggingApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-04 16:35:00.032 INFO  [main] c.s.e.EjercicioLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-04 16:35:24.233 INFO  [main] c.s.e.EjercicioLoggingApplication - Starting EjercicioLoggingApplication using Java 17.0.18 with PID 18948 (C:\Users\jaime.castillo\Documents\ejercicio-logging\ejercicioLogging\target\classes started by jaime.castillo in C:\Users\jaime.castillo\Documents\ejercicio-logging)
+2026-05-04 16:35:24.246 DEBUG [main] c.s.e.EjercicioLoggingApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-04 16:35:24.246 INFO  [main] c.s.e.EjercicioLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-04 16:35:28.722 INFO  [main] c.s.e.EjercicioLoggingApplication - Started EjercicioLoggingApplication in 4.984 seconds (process running for 5.972)
+2026-05-04 16:35:42.856 INFO  [http-nio-8080-exec-1] c.s.e.s.u.UserServiceImp - Intentando recuperar todos los usuarios
+2026-05-04 16:35:43.029 INFO  [http-nio-8080-exec-1] c.s.e.s.u.UserServiceImp - Usuarios recuperados correctamente, total: 3
+2026-05-04 16:36:16.065 INFO  [main] c.s.e.EjercicioLoggingApplication - Starting EjercicioLoggingApplication using Java 17.0.18 with PID 6916 (C:\Users\jaime.castillo\Documents\ejercicio-logging\ejercicioLogging\target\classes started by jaime.castillo in C:\Users\jaime.castillo\Documents\ejercicio-logging)
+2026-05-04 16:36:16.080 DEBUG [main] c.s.e.EjercicioLoggingApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-04 16:36:16.082 INFO  [main] c.s.e.EjercicioLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-04 16:36:22.327 INFO  [main] c.s.e.EjercicioLoggingApplication - Started EjercicioLoggingApplication in 7.064 seconds (process running for 8.696)
+2026-05-04 16:36:22.793 INFO  [http-nio-8080-exec-1] c.s.e.s.u.UserServiceImp - Intentando recuperar todos los usuarios
+2026-05-04 16:36:22.976 INFO  [http-nio-8080-exec-1] c.s.e.s.u.UserServiceImp - Usuarios recuperados correctamente, total: 3

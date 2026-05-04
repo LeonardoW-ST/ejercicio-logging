@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Configuration status="WARN" monitorInterval="30">
+
+    <Properties>
+        <Property name="OUTPUT_PATTERN">%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%t] %c{1.} - %msg%n</Property>
+        <Property name="AUDIT_PATTERN">%d{yyyy-MM-dd HH:mm:ss.SSS} [AUDIT] %-5level - %msg%n</Property>
+    </Properties>
+
+    <Appenders>
+        <Console name="CONSOLE" target="SYSTEM_OUT">
+            <PatternLayout pattern="${OUTPUT_PATTERN}"/>
+        </Console>
+
+        <File name="APPLICATION_FILE" fileName="out/application.log" append="true">
+            <PatternLayout pattern="${OUTPUT_PATTERN}"/>
+        </File>
+
+        <File name="AUDIT_FILE" fileName="out/audit.log" append="true">
+            <PatternLayout pattern="${AUDIT_PATTERN}"/>
+        </File>
+    </Appenders>
+
+    <Loggers>
+
+        <Logger name="com.softtek.ejercicioLogging" level="DEBUG" additivity="false">
+            <AppenderRef ref="CONSOLE"/>
+            <AppenderRef ref="APPLICATION_FILE"/>
+        </Logger>
+
+
+        <Logger name="AUDIT" level="INFO" additivity="false">
+            <AppenderRef ref="AUDIT_FILE"/>
+        </Logger>
+
+
+        <Logger name="org.springframework" level="WARN" additivity="false">
+            <AppenderRef ref="CONSOLE"/>
+        </Logger>
+        <Logger name="org.hibernate" level="WARN" additivity="false">
+            <AppenderRef ref="CONSOLE"/>
+        </Logger>
+
+        <Root level="INFO">
+            <AppenderRef ref="CONSOLE"/>
+        </Root>
+    </Loggers>
+</Configuration>
