@@ -1,12 +1,21 @@
 package com.softtek.ejercicioLogging.daos.model;
 
+import com.softtek.ejercicioLogging.model.User;
 import jakarta.persistence.*;
-import org.apache.catalina.User;
-import org.springframework.data.annotation.Id;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import jakarta.persistence.Id;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name = "bets")
 public class Bet {
@@ -27,4 +36,9 @@ public class Bet {
     @Column(name = "number", nullable = false)
     @OrderColumn(name = "position")
     private List<Integer> numbers = new ArrayList<>();
+
+    public Bet(List<Integer> numbers) {
+        this.numbers = numbers;
+    }
+
 }
