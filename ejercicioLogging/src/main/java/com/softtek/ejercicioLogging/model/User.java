@@ -1,5 +1,6 @@
 package com.softtek.ejercicioLogging.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.softtek.ejercicioLogging.daos.model.Bet;
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -13,15 +14,15 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 @Entity
-@Table(name = "user")
+@Table(name = "users")
 public class User {
 
     @Id
-    @GeneratedValue(strategy = jakarta.persistence.GenerationType.IDENTITY)
-    private Integer id;
+    private String id;
 
-    @Column(name="nombre")
+    @Column(name="name")
     private String nombre;
+
 
     @OneToMany(
             mappedBy = "user",
@@ -31,12 +32,12 @@ public class User {
     private List<Bet> bets = new ArrayList<>();
 
 
-    public User(Integer id, String nombre) {
+    public User(String id, String nombre) {
         this.id = id;
         this.nombre = nombre;
     }
 
-    public User(Integer id, String nombre, List<Bet> bets) {
+    public User(String id, String nombre, List<Bet> bets) {
         this.id = id;
         this.nombre = nombre;
         this.bets = bets;

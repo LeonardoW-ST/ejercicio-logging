@@ -8,7 +8,9 @@ import java.util.Optional;
 
 public interface UserService {
     List<User> getAllUsers();
-    Optional<User> getUserById(int id);
-    Optional<User> createUser(User user);
+    Optional<User> getUserById(String id);
+
+    Optional<User> createUser(String id, User user);
+
     Optional<User> addBet(int userId, Bet bet);
 }
