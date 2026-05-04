@@ -1,5 +1,9 @@
 package com.softtek.ejercicioLogging.service.bet;
 
-public interface BetService {
+import com.softtek.ejercicioLogging.service.exceptions.InvalidBetException;
 
+import java.util.List;
+
+public interface BetService {
+    void validate(List<Integer> numbers) throws InvalidBetException;
 }
