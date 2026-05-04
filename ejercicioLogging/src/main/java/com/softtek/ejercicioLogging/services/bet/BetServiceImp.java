@@ -1,6 +1,6 @@
-package com.softtek.ejercicioLogging.service.bet;
+package com.softtek.ejercicioLogging.services.bet;
 
-import com.softtek.ejercicioLogging.service.exceptions.InvalidBetException;
+import com.softtek.ejercicioLogging.services.exceptions.InvalidBetException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;

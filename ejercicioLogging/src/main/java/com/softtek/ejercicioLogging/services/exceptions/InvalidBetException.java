@@ -1,4 +1,4 @@
-package com.softtek.ejercicioLogging.service.exceptions;
+package com.softtek.ejercicioLogging.services.exceptions;
 
 public class InvalidBetException extends Exception {
     public InvalidBetException() {
