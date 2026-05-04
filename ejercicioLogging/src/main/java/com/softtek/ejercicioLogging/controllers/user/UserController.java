@@ -1,4 +1,4 @@
-package com.softtek.ejercicioLogging.controller;
+package com.softtek.ejercicioLogging.controllers.user;
 
 
 import com.softtek.ejercicioLogging.daos.model.User;
