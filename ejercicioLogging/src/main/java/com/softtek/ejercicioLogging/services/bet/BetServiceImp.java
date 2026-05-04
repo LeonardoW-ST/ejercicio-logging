@@ -3,12 +3,12 @@ package com.softtek.ejercicioLogging.services.bet;
 import com.softtek.ejercicioLogging.services.exceptions.InvalidBetException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
 import java.util.List;
 
-@Component
+@Service
 public class BetServiceImp implements BetService{
 
     private static final Logger log = LoggerFactory.getLogger(BetServiceImp.class);
@@ -19,7 +19,7 @@ public class BetServiceImp implements BetService{
 
 
     @Override
-    public void validate(List<Integer> numbers) throws InvalidBetException {
+    public void validate(List<Integer> numbers) {
         log.info("Validando apuesta recibida");
         log.debug("Números a validar: {}", numbers);
 
