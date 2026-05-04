@@ -564,3 +564,47 @@ Caused by: org.hibernate.AnnotationException: Collection 'com.softtek.ejercicioL
 2026-05-04 16:36:22.327 INFO  [main] c.s.e.EjercicioLoggingApplication - Started EjercicioLoggingApplication in 7.064 seconds (process running for 8.696)
 2026-05-04 16:36:22.793 INFO  [http-nio-8080-exec-1] c.s.e.s.u.UserServiceImp - Intentando recuperar todos los usuarios
 2026-05-04 16:36:22.976 INFO  [http-nio-8080-exec-1] c.s.e.s.u.UserServiceImp - Usuarios recuperados correctamente, total: 3
+2026-05-04 16:37:24.361 INFO  [main] c.s.e.EjercicioLoggingApplication - Starting EjercicioLoggingApplication using Java 17.0.18 with PID 32244 (C:\Users\jaime.castillo\Documents\ejercicio-logging\ejercicioLogging\target\classes started by jaime.castillo in C:\Users\jaime.castillo\Documents\ejercicio-logging)
+2026-05-04 16:37:24.369 DEBUG [main] c.s.e.EjercicioLoggingApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-04 16:37:24.370 INFO  [main] c.s.e.EjercicioLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-04 16:37:27.888 INFO  [main] c.s.e.EjercicioLoggingApplication - Started EjercicioLoggingApplication in 3.86 seconds (process running for 4.548)
+2026-05-04 16:37:37.385 INFO  [http-nio-8080-exec-1] c.s.e.s.u.UserServiceImp - Intentando recuperar todos los usuarios
+2026-05-04 16:37:37.563 INFO  [http-nio-8080-exec-1] c.s.e.s.u.UserServiceImp - Usuarios recuperados correctamente, total: 3
+2026-05-04 16:40:17.156 INFO  [http-nio-8080-exec-4] c.s.e.s.u.UserServiceImp - Intentando recuperar todos los usuarios
+2026-05-04 16:40:17.160 INFO  [http-nio-8080-exec-4] c.s.e.s.u.UserServiceImp - Usuarios recuperados correctamente, total: 3
+2026-05-04 16:43:35.863 INFO  [http-nio-8080-exec-8] c.s.e.s.u.UserServiceImp - Intentando registrar un usuario
+2026-05-04 16:43:35.863 DEBUG [http-nio-8080-exec-8] c.s.e.s.u.UserServiceImp - Datos recibidos para registrar usuario: id=USR005, name=Jaime Castillo
+2026-05-04 16:43:36.088 INFO  [http-nio-8080-exec-8] c.s.e.s.u.UserServiceImp - Usuario registrado correctamente
+2026-05-04 16:43:36.088 DEBUG [http-nio-8080-exec-8] c.s.e.s.u.UserServiceImp - Usuario registrado correctamente: id=USR005, name=Jaime Castillo
+2026-05-04 16:43:59.271 INFO  [http-nio-8080-exec-9] c.s.e.s.u.UserServiceImp - Intentando recuperar todos los usuarios
+2026-05-04 16:43:59.271 INFO  [http-nio-8080-exec-9] c.s.e.s.u.UserServiceImp - Usuarios recuperados correctamente, total: 4
+2026-05-04 16:44:46.872 INFO  [main] c.s.e.EjercicioLoggingApplication - Starting EjercicioLoggingApplication using Java 17.0.18 with PID 32280 (C:\Users\jaime.castillo\Documents\ejercicio-logging\ejercicioLogging\target\classes started by jaime.castillo in C:\Users\jaime.castillo\Documents\ejercicio-logging)
+2026-05-04 16:44:46.878 DEBUG [main] c.s.e.EjercicioLoggingApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-04 16:44:46.879 INFO  [main] c.s.e.EjercicioLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-04 16:44:51.008 INFO  [main] c.s.e.EjercicioLoggingApplication - Started EjercicioLoggingApplication in 4.474 seconds (process running for 5.219)
+2026-05-04 16:44:56.354 INFO  [http-nio-8080-exec-1] c.s.e.s.u.UserServiceImp - Intentando recuperar todos los usuarios
+2026-05-04 16:44:56.547 INFO  [http-nio-8080-exec-1] c.s.e.s.u.UserServiceImp - Usuarios recuperados correctamente, total: 3
+2026-05-04 16:45:15.591 INFO  [http-nio-8080-exec-6] c.s.e.s.u.UserServiceImp - Intentando recuperar un usuario
+2026-05-04 16:45:15.592 DEBUG [http-nio-8080-exec-6] c.s.e.s.u.UserServiceImp - Datos recibidos para registrar usuario: id=USR010
+2026-05-04 16:45:15.801 ERROR [http-nio-8080-exec-6] c.s.e.s.u.UserServiceImp - No se ha podido recuperar el usuario porque ese id
+2026-05-04 16:45:20.143 INFO  [http-nio-8080-exec-8] c.s.e.s.u.UserServiceImp - Intentando registrar un usuario
+2026-05-04 16:45:20.143 DEBUG [http-nio-8080-exec-8] c.s.e.s.u.UserServiceImp - Datos recibidos para registrar usuario: id=USR010, name=Jaime Castillo fernandez
+2026-05-04 16:45:20.144 INFO  [http-nio-8080-exec-8] c.s.e.s.u.UserServiceImp - Usuario registrado correctamente
+2026-05-04 16:45:20.145 DEBUG [http-nio-8080-exec-8] c.s.e.s.u.UserServiceImp - Usuario registrado correctamente: id=USR010, name=Jaime Castillo fernandez
+2026-05-04 16:45:27.863 INFO  [http-nio-8080-exec-10] c.s.e.s.u.UserServiceImp - Intentando recuperar todos los usuarios
+2026-05-04 16:45:27.865 INFO  [http-nio-8080-exec-10] c.s.e.s.u.UserServiceImp - Usuarios recuperados correctamente, total: 4
+2026-05-04 17:09:15.311 INFO  [main] c.s.e.EjercicioLoggingApplication - Starting EjercicioLoggingApplication using Java 17.0.18 with PID 28532 (C:\Users\jaime.castillo\Documents\ejercicio-logging\ejercicioLogging\target\classes started by jaime.castillo in C:\Users\jaime.castillo\Documents\ejercicio-logging)
+2026-05-04 17:09:15.320 DEBUG [main] c.s.e.EjercicioLoggingApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-04 17:09:15.321 INFO  [main] c.s.e.EjercicioLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-04 17:09:19.446 INFO  [main] c.s.e.EjercicioLoggingApplication - Started EjercicioLoggingApplication in 4.507 seconds (process running for 5.64)
+2026-05-04 17:12:13.820 INFO  [http-nio-8080-exec-1] c.s.e.s.u.UserServiceImp - Intentando recuperar todos los usuarios
+2026-05-04 17:12:14.055 INFO  [http-nio-8080-exec-1] c.s.e.s.u.UserServiceImp - Usuarios recuperados correctamente, total: 3
+2026-05-04 17:12:30.881 INFO  [http-nio-8080-exec-5] c.s.e.s.u.UserServiceImp - Intentando registrar un usuario
+2026-05-04 17:12:30.881 DEBUG [http-nio-8080-exec-5] c.s.e.s.u.UserServiceImp - Datos recibidos para registrar usuario: id=USR010, name=Jaime Castillo fernandez
+2026-05-04 17:12:31.098 INFO  [http-nio-8080-exec-5] c.s.e.s.u.UserServiceImp - Usuario registrado correctamente
+2026-05-04 17:12:31.098 DEBUG [http-nio-8080-exec-5] c.s.e.s.u.UserServiceImp - Usuario registrado correctamente: id=USR010, name=Jaime Castillo fernandez
+2026-05-04 17:12:40.113 INFO  [http-nio-8080-exec-7] c.s.e.s.u.UserServiceImp - Intentando recuperar un usuario
+2026-05-04 17:12:40.119 DEBUG [http-nio-8080-exec-7] c.s.e.s.u.UserServiceImp - Datos recibidos para registrar usuario: id=USR010
+2026-05-04 17:12:40.119 INFO  [http-nio-8080-exec-7] c.s.e.s.u.UserServiceImp - Usuario recuperado correctamente
+2026-05-04 17:12:47.295 INFO  [http-nio-8080-exec-4] c.s.e.s.u.UserServiceImp - Intentando recuperar todos los usuarios
+2026-05-04 17:12:47.298 INFO  [http-nio-8080-exec-4] c.s.e.s.u.UserServiceImp - Usuarios recuperados correctamente, total: 4
