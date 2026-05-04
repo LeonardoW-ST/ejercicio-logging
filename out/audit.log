@@ -79,3 +79,7 @@ public class UserServiceImpl implements UserService {
     }
 
 }
+2026-05-04 16:35:42.855 [AUDIT] INFO  - ENTRADA -> com.softtek.ejercicioLogging.services.user.UserServiceImp.getAllUsers()
+2026-05-04 16:35:43.029 [AUDIT] INFO  - SALIDA  <- com.softtek.ejercicioLogging.services.user.UserServiceImp.getAllUsers()
+2026-05-04 16:36:22.793 [AUDIT] INFO  - ENTRADA -> com.softtek.ejercicioLogging.services.user.UserServiceImp.getAllUsers()
+2026-05-04 16:36:22.976 [AUDIT] INFO  - SALIDA  <- com.softtek.ejercicioLogging.services.user.UserServiceImp.getAllUsers()

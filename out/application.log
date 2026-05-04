@@ -549,3 +549,18 @@ Caused by: org.hibernate.AnnotationException: Collection 'com.softtek.ejercicioL
 2026-05-04 16:30:24.942 INFO  [main] c.s.e.EjercicioLoggingApplication - Starting EjercicioLoggingApplication using Java 17.0.18 with PID 31168 (C:\Users\jaime.castillo\Documents\ejercicio-logging\ejercicioLogging\target\classes started by jaime.castillo in C:\Users\jaime.castillo\Documents\ejercicio-logging)
 2026-05-04 16:30:24.951 DEBUG [main] c.s.e.EjercicioLoggingApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
 2026-05-04 16:30:24.952 INFO  [main] c.s.e.EjercicioLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-04 16:35:00.020 INFO  [main] c.s.e.EjercicioLoggingApplication - Starting EjercicioLoggingApplication using Java 17.0.18 with PID 33612 (C:\Users\jaime.castillo\Documents\ejercicio-logging\ejercicioLogging\target\classes started by jaime.castillo in C:\Users\jaime.castillo\Documents\ejercicio-logging)
+2026-05-04 16:35:00.031 DEBUG [main] c.s.e.EjercicioLoggingApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-04 16:35:00.032 INFO  [main] c.s.e.EjercicioLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-04 16:35:24.233 INFO  [main] c.s.e.EjercicioLoggingApplication - Starting EjercicioLoggingApplication using Java 17.0.18 with PID 18948 (C:\Users\jaime.castillo\Documents\ejercicio-logging\ejercicioLogging\target\classes started by jaime.castillo in C:\Users\jaime.castillo\Documents\ejercicio-logging)
+2026-05-04 16:35:24.246 DEBUG [main] c.s.e.EjercicioLoggingApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-04 16:35:24.246 INFO  [main] c.s.e.EjercicioLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-04 16:35:28.722 INFO  [main] c.s.e.EjercicioLoggingApplication - Started EjercicioLoggingApplication in 4.984 seconds (process running for 5.972)
+2026-05-04 16:35:42.856 INFO  [http-nio-8080-exec-1] c.s.e.s.u.UserServiceImp - Intentando recuperar todos los usuarios
+2026-05-04 16:35:43.029 INFO  [http-nio-8080-exec-1] c.s.e.s.u.UserServiceImp - Usuarios recuperados correctamente, total: 3
+2026-05-04 16:36:16.065 INFO  [main] c.s.e.EjercicioLoggingApplication - Starting EjercicioLoggingApplication using Java 17.0.18 with PID 6916 (C:\Users\jaime.castillo\Documents\ejercicio-logging\ejercicioLogging\target\classes started by jaime.castillo in C:\Users\jaime.castillo\Documents\ejercicio-logging)
+2026-05-04 16:36:16.080 DEBUG [main] c.s.e.EjercicioLoggingApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-04 16:36:16.082 INFO  [main] c.s.e.EjercicioLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-04 16:36:22.327 INFO  [main] c.s.e.EjercicioLoggingApplication - Started EjercicioLoggingApplication in 7.064 seconds (process running for 8.696)
+2026-05-04 16:36:22.793 INFO  [http-nio-8080-exec-1] c.s.e.s.u.UserServiceImp - Intentando recuperar todos los usuarios
+2026-05-04 16:36:22.976 INFO  [http-nio-8080-exec-1] c.s.e.s.u.UserServiceImp - Usuarios recuperados correctamente, total: 3
