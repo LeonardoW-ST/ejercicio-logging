@@ -540,3 +540,12 @@ Caused by: org.hibernate.AnnotationException: Collection 'com.softtek.ejercicioL
 2026-05-04 15:41:35.235 INFO  [SpringApplicationShutdownHook] org.spr.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2026-05-04 15:41:35.238 INFO  [SpringApplicationShutdownHook] com.zax.hik.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2026-05-04 15:41:35.240 INFO  [SpringApplicationShutdownHook] com.zax.hik.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-05-04 16:28:40.949 INFO  [main] c.s.e.EjercicioLoggingApplication - Starting EjercicioLoggingApplication using Java 17.0.18 with PID 17428 (C:\Users\jaime.castillo\Documents\ejercicio-logging\ejercicioLogging\target\classes started by jaime.castillo in C:\Users\jaime.castillo\Documents\ejercicio-logging)
+2026-05-04 16:28:40.960 DEBUG [main] c.s.e.EjercicioLoggingApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-04 16:28:40.961 INFO  [main] c.s.e.EjercicioLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-04 16:29:24.103 INFO  [main] c.s.e.EjercicioLoggingApplication - Starting EjercicioLoggingApplication using Java 17.0.18 with PID 11840 (C:\Users\jaime.castillo\Documents\ejercicio-logging\ejercicioLogging\target\classes started by jaime.castillo in C:\Users\jaime.castillo\Documents\ejercicio-logging)
+2026-05-04 16:29:24.111 DEBUG [main] c.s.e.EjercicioLoggingApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-04 16:29:24.112 INFO  [main] c.s.e.EjercicioLoggingApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-04 16:30:24.942 INFO  [main] c.s.e.EjercicioLoggingApplication - Starting EjercicioLoggingApplication using Java 17.0.18 with PID 31168 (C:\Users\jaime.castillo\Documents\ejercicio-logging\ejercicioLogging\target\classes started by jaime.castillo in C:\Users\jaime.castillo\Documents\ejercicio-logging)
+2026-05-04 16:30:24.951 DEBUG [main] c.s.e.EjercicioLoggingApplication - Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-04 16:30:24.952 INFO  [main] c.s.e.EjercicioLoggingApplication - No active profile set, falling back to 1 default profile: "default"
