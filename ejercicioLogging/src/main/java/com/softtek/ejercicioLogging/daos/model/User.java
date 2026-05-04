@@ -16,10 +16,9 @@ import java.util.List;
 public class User {
 
     @Id
-    @GeneratedValue(strategy = jakarta.persistence.GenerationType.IDENTITY)
-    private Integer id;
+    private String id;
 
-    @Column(name="nombre")
+    @Column(name="name")
     private String nombre;
 
     @OneToMany(
@@ -30,12 +29,12 @@ public class User {
     private List<Bet> bets = new ArrayList<>();
 
 
-    public User(Integer id, String nombre) {
+    public User(String id, String nombre) {
         this.id = id;
         this.nombre = nombre;
     }
 
-    public User(Integer id, String nombre, List<Bet> bets) {
+    public User(String id, String nombre, List<Bet> bets) {
         this.id = id;
         this.nombre = nombre;
         this.bets = bets;

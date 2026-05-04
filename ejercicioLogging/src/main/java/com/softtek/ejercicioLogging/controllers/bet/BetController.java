@@ -5,5 +5,5 @@ import org.springframework.http.ResponseEntity;
 import java.util.List;
 
 public interface BetController {
-    ResponseEntity<Void> registerBet(int id, List<Integer> numbers);
+    ResponseEntity<Void> registerBet(String id, List<Integer> numbers);
 }

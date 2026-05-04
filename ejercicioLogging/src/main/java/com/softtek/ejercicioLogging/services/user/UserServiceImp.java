@@ -35,38 +35,56 @@ public class UserServiceImp implements UserService {
 
     @Override
     public List<User> getAllUsers() {
-        log.info("Consultando lista de usuarios");
-        return userRepository.findAll();
+
+        log.info("Intentando recuperar todos los usuarios");
+        List<User> usuarios = userRepository.findAll();
+
+        if (usuarios.isEmpty()) {
+            log.warn("No se han encontrado usuarios en la base de datos");
+        } else {
+            log.info("Usuarios recuperados correctamente, total: {}", usuarios.size());
+        }
+
+        return usuarios;
     }
 
     @Override
     public Optional<User> getUserById(String id) {
-        log.info("Consultando datos de un usuario");
-        log.debug("Buscando usuario con id={}", id);
+        log.info("Intentando recuperar un usuario");
+        log.debug("Datos recibidos para registrar usuario: id={}", id);
+
+        if (!userRepository.existsById(id)) {
+            log.error("No se ha podido recuperar el usuario porque ese id");
+            throw new IllegalArgumentException("No existe un usuario con id " + id);
+        }
+        log.info("Usuario recuperado correctamente");
         return userRepository.findById(id);
     }
 
     @Override
-    public Optional<User> createUser(User user) {
-        log.info("Creando un nuevo usuario");
-        log.debug("Datos del usuario: id={}, nombre={}", user.getId(), user.getNombre());
+    public Optional<User> createUser(String id, User user) {
 
+        log.info("Intentando registrar un usuario");
+        log.debug("Datos recibidos para registrar usuario: id={}, name={}", id, user.getNombre());
 
-        if (user.getId() != null && userRepository.existsById(user.getId())) {
-            log.info("Intento de crear un usuario con id ya existente");
-            log.debug("Id duplicado: {}", user.getId());
-            throw new UserAlreadyExistsException(
-                    "Ya existe un usuario con id " + user.getId());
+        if (userRepository.existsById(id)) {
+            log.error("No se ha podido registrar el usuario porque el id ya existe");
+            throw new IllegalArgumentException("Ya existe un usuario con id " + id);
         }
 
-        User saved = userRepository.save(user);
-        log.info("Usuario creado correctamente");
-        return Optional.of(saved);
+        user.setId(id);
+
+        log.info("Usuario registrado correctamente");
+        log.debug("Usuario registrado correctamente: id={}, name={}", user.getId(), user.getNombre());
+
+
+        return Optional.of(userRepository.save(user));
     }
+
 
     @Override
     @Transactional
-    public Optional<User> addBet(int userId, Bet bet) {
+    public Optional<User> addBet(String userId, Bet bet) {
         log.info("Registrando nueva apuesta para un usuario");
         log.debug("userId={}, numbers={}", userId, bet != null ? bet.getNumbers() : null);
 

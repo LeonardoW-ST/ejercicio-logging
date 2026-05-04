@@ -26,7 +26,7 @@ public class BetControllerImp implements BetController {
     @Override
     @PostMapping
     public ResponseEntity<Void> registerBet(
-            @PathVariable int userId,
+            @PathVariable String userId,
             @RequestBody List<Integer> numbers) {
 
         log.info("Petición de registro de apuesta para usuario");
